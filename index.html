@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Diary</title>
+    <!-- Tailwind CSS를 로드하여 스타일링을 보조합니다. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./imgs/vd_favicon.png" type="image/x-icon" rel="shortcut icon">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <!-- 기존의 인라인 스타일 블록(CSS)은 사용자의 요청에 따라 제거되었습니다. -->
+</head>
+<body>
+    <div class="headline">
+        <div class="moto">Our goal is to build a visual archive that identifies & preserves the elements of graphic design.</div>
+        <!-- 언어 토글 버튼에 JavaScript switchLanguage 함수 연결 -->
+        <div class="langtog">
+            <!-- 초기 상태: KR에 'act' 클래스가 적용되어 활성화됩니다. -->
+            <div class="langbtkr act" onclick="switchLanguage('kr')">KR</div>
+            /
+            <div class="langbteng" onclick="switchLanguage('en')">EN</div>
+        </div>
+    </div>
+    
+    <div class="mbg"></div>
+
+    <!-- KR - 한국어 콘텐츠 섹션 -->
+    <div class="langkr">
+    
+            <div class="dl_bt"><a href="https://drive.google.com/file/d/1_UwbUZYm6vnzzJDbB2taR3f7d2P2Sj7R/view?usp=sharing">GDPEA 다운로드</a></div>
+
+            <div class="divider"></div>
+
+            <div class="rolldown">아래로 스크롤</div>
+
+            <div class="section1">
+                <div class="sec_head">Visual Studio Code (VS Code) 설치</div>
+                <div class="sec_body">
+                    다운로드: <a href="https://code.visualstudio.com/download">VS Code 공식 다운로드 페이지</a>로 이동하여 "Mac" 버튼을 클릭해 .zip 파일을 다운로드합니다.<br>
+                    1. 다운로드한 .zip 파일(일반적으로 다운로드 폴더에 있음)을 찾습니다.<br>
+                    2. .zip 파일을 더블 클릭하여 Visual Studio Code 애플리케이션을 압축 해제합니다.<br>
+                    3. Visual Studio Code 애플리케이션을 응용 프로그램 폴더로 드래그하여 옮깁니다.<br>
+                    실행: 응용 프로그램 폴더에서 Visual Studio Code를 찾아 실행합니다.<br>
+                    파이썬 확장 설치: VS Code가 열리면 왼쪽 사이드바에 있는 확장 아이콘 (네모 네 개 모양)을 클릭합니다. 검색창에 "Python" (Microsoft사 제공)을 검색한 후 설치 버튼을 클릭합니다.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                <div class="section1">
+                <div class="sec_head">Python 3.13 설치</div>
+                <div class="sec_body">
+                    PC에 Python 3.13이 설치되어 있어야 합니다.<br>
+                    설치 확인: <br>
+                    <b>python --version</b><br>
+                    `Python 3.13.x`가 나오지 않으면 <a href="https://www.python.org/downloads/">Python 공식 다운로드 페이지</a>에서 설치합니다.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                    <div class="section1">
+                <div class="sec_head">터미널 열기 및 프로젝트 폴더 이동</div>
+                <div class="sec_body">
+                    VS Code에서 파일 > **폴더 열기...**를 선택하여 main.py 스크립트가 들어 있는 프로젝트 폴더를 엽니다.<br>
+                    상단 메뉴에서 터미널을 클릭한 후 새 터미널을 클릭합니다.<br>
+                    VS Code 화면 하단에 터미널 창이 열리며, 자동으로 프로젝트 디렉토리(ai_code 폴더 등)로 위치가 설정됩니다.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                        <div class="section1">
+                <div class="sec_head">가상환경 생성하기 (venv)</div>
+                <div class="sec_body">
+                    활성화<br>
+                    <b>.venv\Scripts\activate</b><br>
+                    비활성화<br>
+                    <b>deactivate</b>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                            <div class="section1">
+                <div class="sec_head">패키지 설치 (requirements.txt)</div>
+                <div class="sec_body">
+                    활성화<br>
+                    <b>pip install --upgrade pip</b><br>
+                    <b>pip install -r requirements.txt</b><br>
+                    설치된 패키지 확인:<br>
+                    <b>pip.list</b>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                                <div class="section1">
+                <div class="sec_head">이미지 분석 실행 (main.py)</div>
+                <div class="sec_body">
+                    프로젝트 내의 이미지 분석을 실행하려면 아래 명령어를 입력합니다:<br>
+                    <b>python main.py</b><br>
+                    이미지가 자동으로 분석되어 결과 파일이 생성됩니다.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                                    <div class="section1">
+                <div class="sec_head">통계 분석 실행 (statics.py)</div>
+                <div class="sec_body">
+                    이미지 분석 결과를 기반으로 통계 데이터를 생성하려면 아래 명령어를 실행합니다:<br>
+                    <b>python statics.py</b><br>
+                    연도별·형태별 키워드 빈도 및 통계가 자동으로 계산됩니다.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+    </div>
+
+    <!-- EN - 영어 콘텐츠 섹션 -->
+    <div class="langeng">
+    
+            <div class="dl_bt"><a href="https://drive.google.com/file/d/1_UwbUZYm6vnzzJDbB2taR3f7d2P2Sj7R/view?usp=sharing">Download GDPEA</a></div>
+
+            <div class="divider"></div>
+
+            <div class="rolldown">Scroll Down</div>
+
+            <div class="section1">
+                <div class="sec_head">Install Visual Studio Code (VS Code)</div>
+                <div class="sec_body">
+                    Download: Go to the <a href="https://code.visualstudio.com/download">official VS Code download page</a> and click the "Mac" button to download the .zip file.<br>
+                    1. Locate the downloaded .zip file (usually in your Downloads folder).<br>
+                    2. Double-click the .zip file to extract the Visual Studio Code application.<br>
+                    3. Drag the Visual Studio Code application to your Applications folder.<br>
+                    Execution: Find and run Visual Studio Code from the Applications folder.<br>
+                    Install Python Extension: When VS Code opens, click the Extensions icon (the four squares shape) on the left sidebar. Search for "Python" (provided by Microsoft) and click the Install button.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                <div class="section1">
+                <div class="sec_head">Install Python 3.13</div>
+                <div class="sec_body">
+                    Python 3.13 must be installed on your PC.<br>
+                    Check Installation: <br>
+                    <b>python --version</b><br>
+                    If `Python 3.13.x` is not displayed, install it from the <a href="https://www.python.org/downloads/">Python download page.</a>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                    <div class="section1">
+                <div class="sec_head">Open Terminal and Navigate to Project Folder</div>
+                <div class="sec_body">
+                    In VS Code, select File > **Open Folder...** to open the project folder containing the main.py script.<br>
+                    Click Terminal from the top menu, then click New Terminal.<br>
+                    A terminal window will open at the bottom of the VS Code screen, automatically setting the location to the project directory (e.g., the ai_code folder).
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                        <div class="section1">
+                <div class="sec_head">Create Virtual Environment (venv)</div>
+                <div class="sec_body">
+                    Activation<br>
+                    <b>.venv\Scripts\activate</b><br>
+                    Deactivation<br>
+                    <b>deactivate</b>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                            <div class="section1">
+                <div class="sec_head">Install Packages (requirements.txt)</div>
+                <div class="sec_body">
+                    Activation<br>
+                    <b>pip install --upgrade pip</b><br>
+                    <b>pip install -r requirements.txt</b><br>
+                    Check installed packages:<br>
+                    <b>pip list</b>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                                <div class="section1">
+                <div class="sec_head">Run Image Analysis (main.py)</div>
+                <div class="sec_body">
+                    To run the image analysis within the project, enter the following command:<br>
+                    <b>python main.py</b><br>
+                    The images will be automatically analyzed, and result files will be generated.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+                                    <div class="section1">
+                <div class="sec_head">Run Statistics Analysis (statics.py)</div>
+                <div class="sec_body">
+                    To generate statistical data based on the image analysis results, run the following command:<br>
+                    <b>python statics.py</b><br>
+                    Keyword frequency and statistics by year and format will be automatically calculated.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            
+    </div>
+
+
+    <script>
+        // 언어 전환 로직: 'kr' 또는 'en'을 받아 콘텐츠를 전환하고 버튼 상태를 업데이트합니다.
+        function switchLanguage(lang) {
+            const krContent = document.querySelector('.langkr');
+            const enContent = document.querySelector('.langeng');
+            const krButton = document.querySelector('.langbtkr');
+            const enButton = document.querySelector('.langbteng');
+
+            if (lang === 'kr') {
+                // KR 콘텐츠 표시, EN 콘텐츠 숨기기
+                krContent.style.display = 'block'; 
+                enContent.style.display = 'none'; 
+
+                // 버튼 상태: KR 활성화 ('act' 클래스 추가), EN 비활성화 ('act' 클래스 제거)
+                krButton.classList.add('act');
+                enButton.classList.remove('act');
+            } else { // lang === 'en'
+                // EN 콘텐츠 표시, KR 콘텐츠 숨기기
+                enContent.style.display = 'block'; 
+                krContent.style.display = 'none';
+
+                // 버튼 상태: EN 활성화, KR 비활성화
+                enButton.classList.add('act');
+                krButton.classList.remove('act');
+            }
+        }
+
+        // 초기화: 페이지 로드 시 한국어를 기본으로 설정
+        document.addEventListener('DOMContentLoaded', () => {
+             // 페이지 로드 시 'kr'로 설정하여 초기 상태를 보장합니다.
+            switchLanguage('kr');
+        });
+    </script>
+</body>
+</html>
