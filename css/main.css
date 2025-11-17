@@ -41,10 +41,12 @@ a{
 
 .mbg{
     width: 100%;
-    height: 490px;
+    height: 60vh;
     background-image: url(/imgs/vis_pattern.png);
     margin-top: 100px;
     margin-bottom: 100px;
+    background-size: cover;
+    aspect-ratio: 16/9;
 }
 
 .dl_bt{
